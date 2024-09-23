@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Ticketing</title>
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/7cbae68c4b.js" crossorigin="anonymous"></script>
+
+
+    <!-- daisyUI setup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- customize tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#1DD100',
+                secondary: '#030712',
+                couponOne: '#FFBF0F',
+                couponTwo: '#F78C9C',
+                mobileMenu: '#F7F8F8',
+                body: '#03071299',
+                buttonColor: '#1DD100',
+              },
+              fontFamily: {
+                Raleway: 'Raleway',
+                Inter: 'Inter',
+              },
+            }
+          }
+        }
+      </script>
+
+
+      <style>
+
+        .para-text {
+          color: rgb(3, 7, 18);
+        }
+
+        .nav-text {
+          color: rgba(3, 7, 18, 0.7);
+        }
+
+        .btn-border {
+          border: 1px solid rgb(29, 209, 0);
+        }
+
+        .btn-text-green {
+          color: rgb(29, 209, 0);
+        }
+
+        .btn-bg-green {
+          background-color: rgba(29, 209, 0, 0.1);
+        }
+
+        .btn-green-full{
+          background-color: rgb(29, 209, 0);
+        }
+
+        .head-text-color {
+          color: #030712;
+        }
+
+        .hero-linear {
+          background: linear-gradient(180.00deg, rgba(3, 7, 18, 0.5),rgba(3, 7, 18, 0) 100%);
+        }
+
+        .bottom-border {
+          border-bottom: 3px solid rgb(29, 209, 0);
+        }
+
+        .card-color-yellow {
+          background-color: rgb(255, 191, 15);
+        }
+
+        .card-color-pink {
+          background-color: rgb(247, 140, 156);
+        }
+        
+        
+        .green-border {
+          border: 1px solid rgb(29, 209, 0);
+        }
+      </style>
+
+
+</head>
+
+
+
+
+<body>
+
+    <header>
+
+                            <!-- Navbar Section -->
+
+    <nav class="flex justify-around items-center py-8 sticky top-0">
+
+      <h2 class="text-[#030712] text-4xl font-bold">P-Ticket</h2>
+
+      <div class="flex space-x-14 nav-text text-[20px] font-medium">
+
+        <p><a href="#">Home</a></p>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Destination</a></p>
+        <p><a href="#">Search</a></p>
+
+
+      </div>
+
+      <button class="btn-bg-green px-6 py-3 rounded-xl inline-flex justify-center items-center btn-text-green text-[20px] font-bold">Bus <img class="ml-2" src="images/bus-icon.png" alt=""></button>
+
+
+    </nav>
+    
+    
+                              <!-- Hero Section -->
+
+    <section class="md:container mx-auto">
+
+
+      <div
+      class=" min-h-[650px] rounded-[32px] bg-no-repeat bg-cover hero-linear"
+      style="background-image: url(images/banner.png);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+      <h1 class="text-5xl text-[#FFFFFF] leading-[84px] font-bold mt-8">End-to-End Travel with  <span class="btn-text-green">P Paribahan</span></h1>
+      <p class="mb-5 text-white text-[18px] leading-8 font-normal">
+        Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+      </p>
+      <button class="btn-green-full head-text-color text-xl font-bold px-6 py-4 rounded-xl">Buy Tickets</button>
+      </div>
+      </div>
+      </div>
+
+
+    </section>
+    
+    
+                          <!-- Card Section -->
+
+    <section class="md:container mx-auto grid grid-cols-1 md:grid-cols-3 md:space-x-12 md:px-16 md:relative md:bottom-16">
+
+      <div class="p-8 flex items-center space-x-4 rounded-3xl bg-white bottom-border">
+
+        <div><img src="images/people.png" alt=""></div>
+
+        <div>
+          <h2 class="head-text-color text-4xl font-bold">500K+</h2>
+          <p class="nav-text text-[18px] font-normal">Registered users</p>
+        </div>
+
+      </div>
+
+      <div class="p-8 flex items-center space-x-4 rounded-3xl bg-white bottom-border">
+
+        <div><img src="images/ticket-cupon.png" alt=""></div>
+
+        <div>
+          <h2 class="head-text-color text-4xl font-bold">1.7 lacks</h2>
+          <p class="nav-text text-[18px] font-normal">Tickets sold</p>
+        </div>
+
+      </div>
+
+      <div class="p-8 flex items-center space-x-4 rounded-3xl bg-white bottom-border">
+
+        <div><img src="images/stoppage.png" alt=""></div>
+
+        <div>
+          <h2 class="head-text-color text-4xl font-bold">80K+</h2>
+          <p class="nav-text text-[18px] font-normal">Rental partners</p>
+        </div>
+
+      </div>
+
+
+    </section>                      
+
+
+        
+    </header>
+
+
+
+    <main class="md:container mx-auto">
+
+
+                                <!-- Offer Section -->
+
+    <h2 class="para-text text-[40px] font-bold text-center mb-12">Best offers for you</h2>
+    
+    <section class="pb-16 flex flex-col md:flex-row">
+
+      <div class="flex">
+
+
+        <div class="card-color-yellow p-14 space-y-3 rounded-l-3xl relative left-6 -z-40">
+  
+          <h2 class="para-text text-5xl font-bold">15% OFF</h2>
+          <p class="para-text text-[18px] font-medium">on your next purchase</p>
+          <p class="nav-text text-[18px] font-medium">use by January 2024</p>
+    
+        </div>
+    
+        <div><img class="h-[240px]" src="images/info-devider.png" alt=""></div>
+    
+        <div class="card-color-yellow p-14 space-y-3 rounded-r-3xl relative right-6 -z-40">
+    
+          <h2 class="para-text text-5xl font-bold">NEW<i>15</i></h2>
+          <p class="nav-text text-[18px] font-medium">Coupon Code</p>
+    
+        </div> 
+  
+  
+      </div>
+
+
+      <div class="flex">
+
+
+        <div class="card-color-pink p-14 space-y-3 rounded-l-3xl relative left-6 -z-40">
+  
+          <h2 class="para-text text-5xl font-bold">20% OFF</h2>
+          <p class="para-text text-[18px] font-medium">on your next purchase</p>
+          <p class="nav-text text-[18px] font-medium">use by January 2024</p>
+    
+        </div>
+    
+        <div><img class="h-[240px]" src="images/info-devider.png" alt=""></div>
+    
+        <div class="card-color-pink p-14 space-y-3 rounded-r-3xl relative right-6 -z-40">
+    
+          <h2 class="para-text text-5xl font-bold">NEW<i>20</i></h2>
+          <p class="nav-text text-[18px] font-medium">Coupon Code</p>
+    
+        </div> 
+  
+  
+      </div>
+
+
+    </section>
+
+
+    <p class="text-center mb-32"><button class="btn-text-green text-[20px] font-bold green-border rounded-xl px-6 py-4">See All Offers</button></p>
+
+
+
+
+
+    </main>
+
+
+    <footer></footer>
+    
+</body>
+</html>
