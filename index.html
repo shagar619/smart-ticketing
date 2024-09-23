@@ -50,7 +50,7 @@
         }
 
         .nav-text {
-          color: rgba(3, 7, 18, 0.7);
+          color: rgba(3, 7, 18, 0.6);
         }
 
         .btn-border {
@@ -62,7 +62,7 @@
         }
 
         .btn-bg-green {
-          background-color: rgba(29, 209, 0, 0.1);
+          background-color: rgba(29, 209, 0, 0.2);
         }
 
         .btn-green-full{
@@ -81,6 +81,10 @@
           border-bottom: 3px solid rgb(29, 209, 0);
         }
 
+        .top-border {
+          border-top: 2px solid rgb(29, 209, 0);
+        }
+
         .card-color-yellow {
           background-color: rgb(255, 191, 15);
         }
@@ -92,6 +96,18 @@
         
         .green-border {
           border: 1px solid rgb(29, 209, 0);
+        }
+
+        .dashed-border {
+          border: 1px dashed rgba(3, 7, 18, 0.2);
+        }
+
+        .route-btn-color {
+          color: rgba(3, 7, 18, 0.8);
+        }
+
+        .route-btn-bg {
+          background-color: rgba(3, 7, 18, 0.05);
         }
       </style>
 
@@ -107,7 +123,7 @@
 
                             <!-- Navbar Section -->
 
-    <nav class="flex justify-around items-center py-8 sticky top-0">
+    <nav class="flex justify-around items-center py-8 sticky top-0 z-50">
 
       <h2 class="text-[#030712] text-4xl font-bold">P-Ticket</h2>
 
@@ -197,14 +213,14 @@
 
 
 
-    <main class="md:container mx-auto">
+    <main>
 
 
                                 <!-- Offer Section -->
 
     <h2 class="para-text text-[40px] font-bold text-center mb-12">Best offers for you</h2>
     
-    <section class="pb-16 flex flex-col md:flex-row">
+    <section class="md:container mx-auto pb-16 flex flex-col justify-between md:flex-row">
 
       <div class="flex">
 
@@ -258,6 +274,128 @@
 
 
     <p class="text-center mb-32"><button class="btn-text-green text-[20px] font-bold green-border rounded-xl px-6 py-4">See All Offers</button></p>
+
+
+
+
+
+
+
+
+                                      <!-- Ticketing Section -->
+
+    <section class="bg-[#F7F8F8] pt-32 top-border rounded-t-[88px]">
+
+      <h2 class="para-text text-center text-[40px] font-bold mb-6">P.H Paribahan</h2>
+      <p class="nav-text text-center text-[18px] font-normal mb-6">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined.</p>
+
+
+
+      <div class="md:container mx-auto flex bg-white mb-12 rounded-3xl pr-6">
+
+
+
+      <div class="flex-1">
+
+
+        <div class="flex items-center justify-between"> 
+
+
+          <div class="flex items-center space-x-3 pl-6 pt-3">
+  
+            <div><img src="images/bus-logo.png" alt=""></div>
+            <div>
+              <h3 class="para-text text-[32px] font-bold">Greenline Paribahan</h3>
+              <p class="nav-text text-[18px] font-normal">Coach-009-WEB ! AC_Business</p>
+            </div>
+  
+  
+  
+  
+  
+          </div>
+  
+  
+          <div>
+            <button class="btn-bg-green flex items-center space-x-3 p-3 rounded-xl text-[#1DD100] text-[18px] font-medium"><img src="images/seat-green-filled.png" alt=""><span class="pr-2">40</span>Seats left</button>
+          </div>
+  
+  
+  
+        </div> 
+  
+  
+  
+                            <!-- Route Part -->
+  
+  
+        <div class="m-6 bg-[#F7F8F8] p-9 rounded-3xl">
+  
+          <div class="flex justify-between">
+            <p class="nav-text text-[18px] font-semibold mb-6">Route</p>
+            <p class="para-text text-[18px] font-semibold">Dhaka - Sylhet</p>
+          </div>
+  
+          <div class="mb-6">
+            <hr class="dashed-border">
+          </div>
+  
+  
+          <div class="flex justify-between">
+            <p class="nav-text text-[18px] font-semibold mb-6">Departure Time</p>
+            <p class="para-text text-[18px] font-semibold">9:30</p>
+          </div>
+  
+          <div class="mb-6">
+            <hr class="dashed-border">
+          </div>
+  
+          <div class="flex justify-between">
+            <p><button class="route-btn-color route-btn-bg p-4 rounded-xl text-base font-medium">Boarding Point - Laxmipur</button></p>
+            <p><button class="route-btn-color route-btn-bg px-7 py-4 rounded-xl text-base font-medium">Dropping Point - Bogura</button></p>
+            <p><button class="route-btn-color route-btn-bg px-10 py-4 rounded-xl text-base font-medium">Est. Time - 11 Hour</button></p>
+          </div>
+  
+  
+  
+        </div>
+
+
+
+
+      </div>
+
+
+                     <!-- Divider Section -->
+
+
+      <div class="flex justify-around items-center">
+
+
+        <div>
+          <img src="images/info-devider.png" alt="">
+        </div>
+  
+        <div class="flex flex-col">
+          <p><img src="images/fare.png" alt=""></p>
+          <h3 class="para-text text-[32px] font-bold"><i>550</i>Taka</h3>
+          <p class="nav-text text-2xl font-semibold">Per Seat</p>
+        </div>
+
+
+      </div>
+      
+
+
+
+
+
+
+      </div>
+
+
+
+    </section>                                  
 
 
 
