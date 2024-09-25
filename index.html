@@ -665,7 +665,9 @@
             </div>
 
             <div class="border-b-2 border-dashed my-4"></div>
-            <div class="flex items-center justify-between gap-2 py-2 text-lg font-semibold">
+            <div
+            id="show-coupon-price"
+             class="flex items-center justify-between gap-2 py-2 text-lg font-semibold">
               <input id="coupon-field" disabled type="text" class="input my-5 w-full input-primary border-none" placeholder="Have any coupon?">
               <button id="coupon-btn" disabled class="bg-[#1DD100] text-white p-3 rounded-lg">Apply</button>
             </div>
@@ -696,7 +698,7 @@
               <div class="label">
                 <span class="label-text font-bold text-base">Phone Number*</span>
               </div>
-              <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
+              <input id="phone-number" type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
             </label>
 
             <label class="form-control w-full my-3">
@@ -706,7 +708,9 @@
               <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
             </label>
 
-            <button onclick="my_modal_1.showModal()" class="text-xl text-white font-bold bg-[#1DD100] py-2 w-full rounded-2xl my-3">Next</button>
+            <button
+            id="next-btn"
+             disabled onclick="my_modal_1.showModal()" class="text-xl text-white font-bold bg-[#1DD100] py-2 w-full rounded-2xl my-3">Next</button>
 
 
             <!-- Modal part -->
@@ -727,7 +731,9 @@
     <div class="modal-action">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
-        <button class="bg-[#27AE60] text-white text-xl font-semibold rounded-[32px] py-3 px-12">Continue</button>
+        <button
+        id="btn-continue"
+         class="bg-[#27AE60] text-white text-xl font-semibold rounded-[32px] py-3 px-12">Continue</button>
       </form>
     </div>
   </div>
@@ -783,3 +789,5 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+
