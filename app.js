@@ -70,6 +70,11 @@ function handleSelectSeat(event) {
         return alert('Maximum Seat Booked!');
     }
 
+
+    document.getElementById('input-email').removeAttribute('disabled');
+    document.getElementById('phone-number').removeAttribute('disabled');
+    document.getElementById('input-name').removeAttribute('disabled');
+
 }
 
 
@@ -141,3 +146,8 @@ phoneNumber.addEventListener('input', (e) => {
 document.getElementById('btn-continue').addEventListener('click', () => {
     window.location.reload();
 });
+
+
+
+
+

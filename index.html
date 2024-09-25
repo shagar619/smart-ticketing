@@ -109,6 +109,14 @@
         .route-btn-bg {
           background-color: rgba(3, 7, 18, 0.05);
         }
+
+        .footer-hr {
+          border: 1.5px dashed rgba(255, 255, 255, 0.3);
+        }
+
+        .white-lg {
+          color: rgba(255, 255, 255, 0.7);
+        }
       </style>
 
 
@@ -213,7 +221,7 @@
 
 
 
-    <main>
+    <main class="">
 
 
                                 <!-- Offer Section -->
@@ -284,7 +292,7 @@
 
                                       <!-- Ticketing Section -->
 
-    <section class="bg-[#F7F8F8] pt-32 top-border rounded-t-[88px]">
+    <section class="bg-[#F7F8F8] pt-32 top-border rounded-t-[88px] pb-32">
 
 
 
@@ -691,21 +699,21 @@
               <div class="label">
                 <span class="label-text font-bold text-base">Passenger Name*</span>
               </div>
-              <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
+              <input disabled id="input-name" type="text" placeholder="Enter your name" class="input input-bordered w-full" />
             </label>
 
             <label class="form-control w-full my-3">
               <div class="label">
                 <span class="label-text font-bold text-base">Phone Number*</span>
               </div>
-              <input id="phone-number" type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
+              <input disabled id="phone-number" type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
             </label>
 
             <label class="form-control w-full my-3">
               <div class="label">
                 <span class="label-text font-bold text-base">Email ID</span>
               </div>
-              <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
+              <input id="input-email" disabled type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
             </label>
 
             <button
@@ -783,7 +791,56 @@
     </main>
 
 
-    <footer></footer>
+    <footer class=" bg-[#030712] py-32">
+
+
+      <div class="md:container mx-auto flex flex-col md:flex-row justify-between items-center">
+
+        <div>
+          <h3 class="text-white text-4xl font-bold mb-2">P-Ticket</h3>
+          <p class="text-white text-[18px] font-normal">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+        </div>
+
+
+        <div>
+          <h4 class="text-white text-xl font-semibold mb-3"><a href="#">Download our app</a></h4>
+
+          <!-- google play part -->
+           <div class="flex items-center space-x-2 border rounded p-1">
+            <div><img src="images/playstore.png" alt=""></div>
+            <div>
+              <p class="text-white text-[12px] font-light">GET IT ON</p>
+              <h3 class="text-white text-base font-medium">GOOGLE PLAY</h3>
+            </div>
+           </div>
+          
+        </div>
+
+
+      </div>
+
+      <div class="md:container mx-auto footer-hr mt-12 mb-8">
+        
+      </div>
+
+
+      <div class="md:container mx-auto flex justify-between items-center">
+
+        <div><p class="white-lg text-base font-normal">@all rights reserved, P-Ticket services limited.2024</p></div>
+        <div class="flex space-x-8 text-white text-base font-medium">
+          <p><a href="#">Terms & condition</a></p>
+          <p><a href="#">Return & refund policy</a></p>
+          <p><a href="#">Privacy policy</a></p>
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </footer>
 
 
     <script src="app.js"></script>
